@@ -1,0 +1,1 @@
+https://api.github.com/repos/pralg17/t01funktsioonid/pulls?state=closed
