@@ -10,10 +10,10 @@ public class KilpkonnaLaud{
 		}
 	}
 	public void vanasseKohtaT2rn(){
-		m[k.kysiY()][k.kysiX()]='*';
+		m[m.length-1-k.kysiY()][k.kysiX()]='*';
 	}
 	public void uudeKohtaSymbol(){
-		m[k.kysiY()][k.kysiX()]=k.kujund();
+		m[m.length-1-k.kysiY()][k.kysiX()]=k.kujund();
 	}
 	public Kilpkonn kysiKilpkonn(){
 		return k;

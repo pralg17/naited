@@ -25,6 +25,7 @@ public class Kilpkonn{
 	public void paremale(){
 		suund++;
 		if(suund>3){suund=0;}
+		laud.uudeKohtaSymbol();
 	}
 	public void vasakule(){
 		paremale(); paremale(); paremale();
