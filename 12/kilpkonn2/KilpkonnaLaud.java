@@ -1,3 +1,4 @@
+import java.io.*; 
 public class KilpkonnaLaud{
 	Kilpkonn k;
 	char[][] m=new char[10][10];
@@ -31,5 +32,12 @@ public class KilpkonnaLaud{
 			sb.append('\n');
 		}
 		return sb.toString();
+	}
+	public void salvestaFaili(String fnimi){
+	  try{
+		PrintWriter pw=new PrintWriter(new FileWriter(fnimi));
+		pw.println(this.toString());
+		pw.close();
+	  }catch(Exception ex){ex.printStackTrace();}
 	}
 }
