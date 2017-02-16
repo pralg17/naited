@@ -5,6 +5,8 @@ public class Kilpkonn{
 	public Kilpkonn(KilpkonnaLaud laud){
 		x=y=suund=0;
 		this.laud=laud;
+		laud.yhendaKilpkonn(this);
+		laud.uudeKohtaSymbol();
 	}
 	public char kujund(){
 		return kujundid[suund];
