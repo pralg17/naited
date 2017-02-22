@@ -1,0 +1,8 @@
+Versioon1:
+Lugege sisse andmestik kujul
+2017-02-14 13:45;486;487;485
+
+Väljastage iga rida teise faili kujul
+kellaaeg;keskmine - ehk siis
+13:45;486
+
