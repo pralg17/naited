@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: veeb1
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: zeus
+Implementation-Vendor-Id: veeb1
+Build-Jdk: 1.8.0_102
+Implementation-URL: http://projects.spring.io/spring-boot/veeb1/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

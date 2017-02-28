@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tervitamine</title>
+    <script>
+       var yhendus=new XMLHttpRequest();
+       yhendus.onreadystatechange=saabumine;
+       function vajutus(){
+    	   var aadress="/tervitusleht1?eesnimi="+
+    			   document.getElementById("kast1").value;
+    	   yhendus.open("GET", aadress, true);
+    	   yhendus.send();
+       }
+       function saabumine(){
+    	   if(yhendus.readyState==4){
+    		   document.getElementById("vastus").innerHTML=yhendus.responseText;
+    	   }
+       }
+    </script>
+  </head>
+  <body>
+    Palun eesnimi:
+      <input type="text" id="kast1" />
+      <input type="button" value="Tervita" onclick="vajutus()"/>
+    <div id="vastus">
+      Vastuse koht
+    </div>
+  </body>
+</html>
