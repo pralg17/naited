@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tervitamine</title>
+    <script>
+       var yhendus=new XMLHttpRequest();
+       yhendus.onreadystatechange=saabumine;
+       function vajutus(){
+    	   var aadress="/geomeetrilise_keskmise_arvutus?a1="+
+    			   document.getElementById("kast1").value+"&a2="+
+    			   document.getElementById("kast2").value;
+    	   yhendus.open("GET", aadress, true);
+    	   yhendus.send();
+       }
+       function saabumine(){
+    	   if(yhendus.readyState==4){ //kõik andmed kohal
+    		   document.getElementById("vastus").innerHTML=yhendus.responseText;
+    	   }
+       }
+    </script>
+  </head>
+  <body>
+  Arvud:
+      <input type="text" id="kast1" />
+      <input type="text" id="kast2" />
+      <input type="button" value="Arvuta" onclick="vajutus()"/>
+    <div id="vastus">
+      Vastuse koht
+    </div>
+  </body>
+</html>
