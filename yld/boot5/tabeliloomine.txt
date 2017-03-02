@@ -1,0 +1,6 @@
+CREATE TABLE lugejad(
+  email VARCHAR(30) NOT NULL PRIMARY KEY,
+  laenutusi INT DEFAULT 0
+);
+
+INSERT INTO lugejad VALUES ('juku@eesti.ee', 14);
