@@ -21,6 +21,19 @@ public class Rakendus {
     String tervitusfunktsioon3(String eesnimi) {
         return "Tere, "+eesnimi;
     }
+	
+	//Looge veebist kasutatav funktsioon, kuhu antakse ette kaks arvu
+	//ning mis väljastab nende arvude geomeetrilise keskmise
+	@RequestMapping("/geomeetriline_keskmine")
+	String geomkesk(String arv1, String arv2){
+	  try{
+		double a1=Double.parseDouble(arv1);
+		double a2=Double.parseDouble(arv2);
+		return String.valueOf(Math.sqrt(a1*a2));
+	  } catch(Exception e){
+		 return "Viga: "+e.getMessage();
+	  }
+	}
  
     public static void main(String[] args) {
 		System.getProperties().put("server.port", 4200);
