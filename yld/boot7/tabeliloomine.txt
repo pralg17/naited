@@ -1,0 +1,16 @@
+CREATE TABLE lugejad(
+  email VARCHAR(30) NOT NULL PRIMARY KEY,
+  laenutusi INT DEFAULT 0
+);
+
+INSERT INTO lugejad VALUES ('juku@eesti.ee', 14);
+
+CREATE TABLE raamatud(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  pealkiri VARCHAR(30),
+  lugeja_email VARCHAR(30),
+  FOREIGN KEY(lugeja_email) REFERENCES lugejad(email)
+);
+
+INSERT INTO raamatud VALUES (NULL, "Kevade", "juku@eesti.ee");
+INSERT INTO raamatud VALUES (NULL, "Suvi", "juku@eesti.ee");
