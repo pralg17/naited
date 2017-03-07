@@ -1,0 +1,8 @@
+CREATE TABLE kasutajad(
+  kasutajanimi VARCHAR(30) NOT NULL PRIMARY KEY,
+  saldo DECIMAL(8, 2)
+);
+
+INSERT INTO kasutajad VALUES ('juhan', 10);
+INSERT INTO kasutajad VALUES ('malle', 15);
+SELECT * FROM kasutajad;
