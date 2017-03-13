@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Arvutamine</title>
+	<script>
+	   var yhendus=new XMLHttpRequest();
+	   yhendus.onreadystatechange=andmedSaabusid;
+	   function vajutus(){
+	      var a1=document.getElementById("kast1").value;
+	      var a2=document.getElementById("kast2").value;
+	      yhendus.open("GET", "/geomeetriline_keskmine?arv1="+a1+"&arv2="+a2, true);
+		  yhendus.send();
+	   }
+	   function andmedSaabusid(){
+	      document.getElementById("vastus").innerHTML=yhendus.responseText;
+	   }
+	</script>
+  </head>
+  <body>
+    <h1>Arvutamine</h1>
+	<input type="text" id="kast1" />
+	<input type="text" id="kast2" />
+	<input type="button" value="Arvuta" onclick="vajutus()"/>
+	<div id="vastus">Vastuse koht</div>
+  </body>
+</html>

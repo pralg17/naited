@@ -39,7 +39,7 @@ public class Rakendus {
 		System.getProperties().put("server.port", 4200);
         SpringApplication.run(Rakendus.class, args);
     }
-}
+}	
 
 //scl enable rh-maven33 bash
 //mvn package
