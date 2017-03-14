@@ -1,0 +1,24 @@
+CREATE TABLE kasutajad(
+  kasutajanimi VARCHAR(30) NOT NULL PRIMARY KEY,
+  saldo DECIMAL(8, 2)
+);
+
+INSERT INTO kasutajad VALUES ('juhan', 10);
+INSERT INTO kasutajad VALUES ('malle', 15);
+SELECT * FROM kasutajad;
+
+CREATE TABLE arved(
+   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   knimi VARCHAR(30),
+   summa DECIMAL(8, 2),
+   FOREIGN KEY(knimi) REFERENCES kasutajad(kasutajanimi)
+);
+
+--DROP TABLE arved;
+
+
+ INSERT INTO arved VALUES(DEFAULT, 'juhan', 3);
+ INSERT INTO arved VALUES(DEFAULT, 'juhan', 5.20);
+ INSERT INTO arved VALUES(DEFAULT, 'malle', 4);
+ 
+ 
