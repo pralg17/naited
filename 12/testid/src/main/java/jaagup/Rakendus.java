@@ -14,8 +14,13 @@ public class Rakendus {
 	
 	@RequestMapping("/tervita")
 	String tervitusfunktsioon3(String eesnimi){
-		return "Tere, "+eesnimi;
+		if(eesnimi==null){return "eesnimi puudub";}
+		return "Tere,"+eesnimi;
 	}
+	
+	//Looge juurde funktsioon, mis saab parameetriteks ees- ja perekonnanime ning
+	//tervitab kasutajat kujul "Tere, kodanik Kippar J".
+	//Koostage juurde test paari erisuguse nimega kontrollimaks, et käsklus töötab õigesti
 	
 
     public static void main(String[] args) {
