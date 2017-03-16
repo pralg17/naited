@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: jaagup.EsimeneTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec <<< FAILURE! - in jaagup.EsimeneTest
-tervituseTest(jaagup.EsimeneTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<Tere,[ ]Juku> but was:<Tere,[]Juku>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at jaagup.EsimeneTest.tervituseTest(EsimeneTest.java:15)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in jaagup.EsimeneTest

@@ -14,4 +14,9 @@ public class EsimeneTest{
 		Rakendus r=new Rakendus();
 		assertEquals("Tere, Juku", r.tervitusfunktsioon3("Juku"));
 	}	
+	@Test
+	public void tervituseTest2(){
+		Rakendus r=new Rakendus();
+		assertEquals("Tere, kodanik Juurikas J", r.tervitusfunktsioon4("Juku", "Juurikas"));
+	}
 }
