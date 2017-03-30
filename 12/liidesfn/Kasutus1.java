@@ -23,8 +23,9 @@ public class Kasutus1{
 		Funktsioon ruutjuureArvutaja=new AstmeFunktsioon(0.5);
 		Funktsioon sentimeetritestTollideArvutaja=new KordajaFunktsioon(1/2.54);
 		Funktsioon kilomeetritestMeetriteArvutaja=new KordajaFunktsioon(1000);
+		Funktsioon keraRuumalaArvutaja=new VeebiFunktsioon("http://greeny.cs.tlu.ee:4201/keraruumala","raadius");
 		double[] andmed={3, 11, 7};
-		Funktsioon[] arvutajad={kilomeetritestMeetriteArvutaja, ruuduArvutaja}; //lisage veel	
+		Funktsioon[] arvutajad={kilomeetritestMeetriteArvutaja, ruuduArvutaja, keraRuumalaArvutaja}; //lisage veel	
 		double[][] vastustetabel=arvuta(arvutajad, andmed);
 		System.out.println(Arrays.deepToString(vastustetabel));
 		double[] meetrid=arvuta(kilomeetritestMeetriteArvutaja, andmed);
