@@ -1,0 +1,11 @@
+Tekstide summeerimine
+
+Koosta liides teksti täiendamiseks ning teksti kohta ülevaadete küsimiseks. 
+
+Teksti lõppu saab lauseid lisada
+
+Väljastatakse teksti tähtede arv
+
+Koosta vastav liidest realiseeriv klass, mille abil saab soovitud tegevused ette võtta. 
+
+java -Djava.security.egd=file:/dev/./urandom -jar target/veeb4-1.jar
