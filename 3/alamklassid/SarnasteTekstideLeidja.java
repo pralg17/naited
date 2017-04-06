@@ -34,7 +34,7 @@ public abstract class SarnasteTekstideLeidja{
 			public int compare(double[] rida1, double[] rida2){
 				return (int)(rida1[2]-rida2[2]);
 			}
-		});
+		});	
 		return vastus;
 	}
 	public String kysiTekst(int nr){
