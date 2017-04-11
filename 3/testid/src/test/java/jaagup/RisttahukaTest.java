@@ -9,5 +9,9 @@ public class RisttahukaTest{
 		assertEquals(12, r1.pohjaPindala(), 0.01);
 	}
 	//Kirjutage test risttahuka ruumala arvutamise kontrolliks
+	@Test
+	public void ruumala(){
+		assertEquals(6, new Risttahukas(1, 2, 3).ruumala(), 0.01);
+	}
 	
 }

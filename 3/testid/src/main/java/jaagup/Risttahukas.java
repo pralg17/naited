@@ -11,4 +11,4 @@ public class Risttahukas extends Pystkeha{
 	public double pohjaPindala(){
 		return l*p;
 	}
-}
+} //Lisage klass ja testid silindri tarbeks
