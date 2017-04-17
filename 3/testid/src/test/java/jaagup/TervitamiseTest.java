@@ -19,4 +19,11 @@ public class TervitamiseTest{
 		assertEquals("Tere, Mati", this.restTemplate.
 		  getForObject("/tervita?eesnimi=Mati", String.class));
 	}
+	@Test 
+	public void ruumala1(){
+		String vastus=this.restTemplate.getForObject(
+		  "/silindriruumala?raadius=1&korgus=2", String.class);
+		assertEquals("Silindri ruumala on ", vastus.substring(0, 20));
+		assertEquals(6.28, Double.parseDouble(vastus.substring(20)), 0.1);
+	}
 }

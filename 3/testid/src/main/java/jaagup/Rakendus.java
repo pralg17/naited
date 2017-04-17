@@ -11,6 +11,14 @@ public class Rakendus{
 	public String tervitamine(String eesnimi){
 		return "Tere, "+eesnimi;
 	}
+	//Lisage aadress silindri ruumala leidmiseks
+	//Kasuta arvutamisel silindri klassi teenust
+	//Kontrolli veebikaudset arvutus testi abil
+	@RequestMapping("/silindriruumala")
+	public String silindriruumala(double raadius, double korgus){
+		Silinder s1=new Silinder(raadius, korgus);
+		return "Silindri ruumala on "+s1.ruumala();
+	}
 	public static void main(String[] arg){
 		SpringApplication.run(Rakendus.class, arg);
 	}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jookide leht</title>
+	<script>
+	   var xhr=new XMLHttpRequest();
+	   xhr.onreadystatechange=andmedSaabusid;
+	   function andmedSaabusid(){
+	      document.getElementById("vastus1").innerHTML=xhr.responseText;
+	   }
+	   function vajutus1(){
+	      xhr.open("GET", "/kogusvaadis", true);
+		  xhr.send();
+	   }
+	   function vajutus2(){
+	      xhr.open("GET", "/pudelvaadist", true);
+		  xhr.send();
+	   }
+	</script>
+  </head>
+  <body>
+     <input type="button" value="nupp1" onclick="vajutus1()" />
+     <input type="button" value="nupp2" onclick="vajutus2()" />
+     <div id="vastus1">Esimese vastuse koht</div>
+  </body>
+</html>
